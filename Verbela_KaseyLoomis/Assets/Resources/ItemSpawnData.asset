@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313cea1a1d4a5b44baca1bcf43fcb995, type: 3}
+  m_Name: ItemSpawnData
+  m_EditorClassIdentifier: 
+  objToSpawn: {fileID: 3047354435766678353, guid: 556e64622ba41944fb8e704ab1c4fe93, type: 3}
+  spawnRadius: 5
+  spawnIs2D: 0
+  spawnRadiusColor: {r: 1, g: 0.43374258, b: 0, a: 1}
