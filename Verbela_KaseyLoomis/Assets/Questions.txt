@@ -1,0 +1,17 @@
+Q.How can your implementation be optimized?
+A.I think it may come down to which is faster in a given scenario, checking which is closer with loops or callbacks through events.
+That being said, it's possible that the way the events and callbacks are being used here may incur enough overhead that a more simple system using loops would be faster but to maintain the separation of dependencies would be much more difficult.
+UnityEvents are also known to be a fair bit slower than c#'s Actions, so that would be another small change that could be done.
+Aside from events, spatially partitioning the objects and or culling them in some other way would be another way to reduce the amount of objects that need to be considered.
+Another optimization would be the immediate publishes that happen as a result of changes, For example: like when a TransformDistanceBeahviour is disabled. If many were disabled simultaneously, this would result in a bunch of redundant checks, so this kind of thing should be batched so that only one publish happens after all the bunch are turned off.
+
+How much time did you spend on your implementation?
+About a day (Thurs evening + Friday), 6-8 hours of work time for the initial build version.
+Unfortunately, due to a family emergency, I was unable to allocate any time to this over the weekend.
+About 2 hours on Monday were spent writing comments/documentation for everything.
+
+What was most challenging for you?
+I'd put a personal challenge on myself to keep the module-ettes/pieces of the project as independent of each other as possible without going to abstract and to try and focus on using unity for the solutions instead of standard c# approaches.
+
+What else would you add to this exercise?
+The instructions as given were clear and concise, yet very open ended. Maybe a bit more clues as to whether there was a preference to solving issues with more unity or c# centric approach.

@@ -5,8 +5,18 @@ using UnityEngine;
 
 namespace verb
 {
+    /// <summary>
+    /// Methods to interact with GameObjectSpawner data.
+    /// </summary>
     public static class GameObjectSpawnerDataExtensions
     {
+        /// <summary>
+        /// Spawn a number of game objects optionally parented to the given transform
+        /// </summary>
+        /// <param name="data">Data used to configure the spawn parameters</param>
+        /// <param name="count">Number of objects to spawn</param>
+        /// <param name="parent">OPTIONAL: Transform to parent to the spawned object</param>
+        /// <returns>A list of references to each of the spawned objects</returns>
         public static List<GameObject> Spawn(this GameObjectSpawnerData data, int count, Transform parent = null)
         {
             List<GameObject> spawnedObjects = new List<GameObject>();
@@ -32,6 +42,14 @@ namespace verb
             return spawnedObjects;
         }
 
+        /// <summary>
+        /// Spawn a number of game objects optionally parented to the given transform
+        /// </summary>
+        /// <typeparam name="T">Type of component to get off the spawned objects</typeparam>
+        /// <param name="data">Data used to configure the spawn parameters</param>
+        /// <param name="count">Number of objects to spawn</param>
+        /// <param name="parent">OPTIONAL: Transform to parent to the spawned object</param>
+        /// <returns>A list of references to the given component type on each spawned object</returns>
         public static List<T> Spawn<T>(this GameObjectSpawnerData data, int count, Transform parent = null)
             where T : Component
         {

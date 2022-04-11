@@ -747,6 +747,7 @@ MonoBehaviour:
   amountToSpawn: 5
   spawnParent: {fileID: 132856775}
   spawnOnEnable: 0
+  spawn1HotKey: 97
 --- !u!114 &1268969312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -763,6 +764,7 @@ MonoBehaviour:
   amountToSpawn: 5
   spawnParent: {fileID: 2055584655}
   spawnOnEnable: 0
+  spawn1HotKey: 98
 --- !u!1001 &1446542794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -979,7 +981,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onTransformUpdated: {fileID: 11400000, guid: 86565ba4a48552e48810552ff3094cda, type: 2}
-  SendInitNotify: 1
 --- !u!1 &1782967466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,8 +1057,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782967466}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: -0.38129604, y: -0.3099501, z: 0.13741702, w: -0.8600354}
+  m_LocalPosition: {x: -10.917948, y: 17.621294, z: -11.52241}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 151440964}

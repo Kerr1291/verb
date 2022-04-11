@@ -6,29 +6,30 @@ using UnityEngine.Events;
 
 namespace verb
 {
+    /// <summary>
+    /// Unity object to allow for scene interaction with the ObservableTransform data object
+    /// </summary>
     public class ObservableTransformBehaviour : MonoBehaviour
     {
+        [Header("Allows both prefab assets and in-scene objects to subscribe to changes in the transform on this object")]
+        /// <summary>
+        /// Data object that tracks a transform reference and provides a way for others to subscribe to it
+        /// </summary>
         public ObservableTransform onTransformUpdated;
 
-        //public bool SendInitNotify = true;
-
-        private void Awake()
+        /// <summary>
+        /// When this object is awaken, bind the transform on this game object to the data object
+        /// </summary>
+        protected virtual void Awake()
         {
-            if(onTransformUpdated != null)
+            if (onTransformUpdated != null)
                 onTransformUpdated.ObservedTransform = transform;
             transform.hasChanged = false;
         }
 
-        //IEnumerator Start()
-        //{
-        //    yield return new WaitForEndOfFrame();
-        //    if (SendInitNotify)
-        //    {
-        //        if (onTransformUpdated != null)
-        //            onTransformUpdated.Publish();
-        //    }
-        //}
-
+        /// <summary>
+        /// Check each frame to see if the transform has changed and notify all subscribers
+        /// </summary>
         protected virtual void Update()
         {
             if (onTransformUpdated != null && transform.hasChanged)
