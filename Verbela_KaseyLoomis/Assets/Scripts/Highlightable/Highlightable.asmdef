@@ -1,0 +1,16 @@
+{
+    "name": "Highlightable",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f984266c33cfac549a8fed60fa9c27f3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

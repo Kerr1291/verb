@@ -1,0 +1,16 @@
+{
+    "name": "XMLUtils",
+    "rootNamespace": "",
+    "references": [
+        "GUID:97df486f1aef43a40923ada9563579bc"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
