@@ -9,6 +9,7 @@ Q. How much time did you spend on your implementation?
 A. About a day (Thurs evening + Friday), 6-8 hours of work time for the initial build version.
 Unfortunately, due to a family emergency, I was unable to allocate any time to this over the weekend.
 About 2 hours on Monday were spent writing comments/documentation for everything.
+The remaining 4 hours on Monday were spent adding some unit test examples and really quickly adding an example of XML serialization.
 
 Q. What was most challenging for you?
 A. I'd put a personal challenge on myself to keep the module-ettes/pieces of the project as independent of each other as possible without going to abstract and to try and focus on using unity for the solutions instead of standard c# approaches.
